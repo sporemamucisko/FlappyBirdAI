@@ -39,7 +39,7 @@ class Dqn():
                 targets[i][action] = reward               #Jeżeli przegramy to Qvalue akcji która do tego doprowadziła będzie = reward
             else:
                 targets[i][action] = reward + self.discount * np.max(model.predict(nextState)[0])            #model.predict - Największa wartość Q przewidziana przez nasz model całość to nasza aktualizacja Q
-                return inputs,targets                     #Inputs to wejścia, targets to Qvalues jakie chcemy żeby nasz model przekazywał, updatujemy tylko Qvalues
+        return inputs,targets                     
 
 
 
