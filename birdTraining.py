@@ -6,7 +6,7 @@ from NeuralNetwork import Brain
 from gameEnviroment import Enviroment
 
 #Setting parameters
-learningRates = 0.01              # Learning Rate
+learningRates = 0.001              # Learning Rate
 maxMemory = 500000                  # Expierience Replay Memory 5000 expiriences maksymalnie
 gamma = 0.95                        # Gamma Discount factor - QValues
 batchSize = 32                     # Size of batches inputs and targets
